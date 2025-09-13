@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*--------------------------------------------- Barra de navegación ----------------------------------------------- */
+.barra-navegacion {
+  display: flex;
+  justify-content: space-between; 
+  background-color: #000000;
+  align-items: center;
+  padding: 0px 40px;
+  color: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+
+.iconos {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 25px;
+  margin-left: 485px
+}
+
+.icono {
+  width: 35px;
+  height: 35px;
+  filter: invert(1); 
+  transition: transform 0.5s ease;
+}
+
+
+.icono:hover {
+  transform: scale(1.05);
+}
+/*---------------------------------------------------------------------------*/
+.img_regalo{
+    width: 100px;
+    align-content: centerx;
+}
+.titulos{
+font-family: "Times New Roman", Times, serif;
+font-style: italic;
+text-align: center;
+font-size: xxx-large;
+color: #000000;
+font-weight: bold;
+}
+
+.wishlist-table {
+  width: 90%;
+  margin: 20px auto;     
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  text-align: center;   
+}
+
+.wishlist-table th, 
+.wishlist-table td {
+  border: none;                   
+  border-bottom: 1px solid #ddd;  
+  padding: 12px;
+  font-size: large;
+}
+
+.wishlist-table th {
+  font-weight: bold;
+  background-color: #f9f9f9; 
+}
+
+.img_producto {
+  border-radius: 8px;
+  width: 100px;
+  height: 100px;
+  background-color: #000000;
+  padding: 3%;
+}
+
+.btn-icon {
+  display: inline-flex;        /* centra el ícono */
+  align-items: center;
+  justify-content: center;
+  width: 100px;                 /* tamaño fijo del botón */
+  height: 36px;
+  border: none;
+  border-radius: 8px;
+  margin: 0 3px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-icon img {
+  width: 25px;
+  height: 25px;
+}
+
+/* Colores según acción */
+.btn-icon.share  { background-color: #2196F3; }  /* azul */
+.btn-icon.edit   { background-color: #FFC107; }  /* amarillo */
+.btn-icon.delete { background-color: #F44336; }  /* rojo   */
+
+.btn-icon:hover {
+  opacity: 0.8;               /* efecto hover */
+}
+
+
+
+
+/* --------------------------------------------------- FOOTER ---------------------------------------------------*/
+.footer {
+  background: black;
+  color: white;
+  padding: 3%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer h4 {
+  color: #ffffff;         
+  margin-bottom: 8px;
+}
+
+.div_con{
+    text-align: center;
+}
+.logos{
+    width:30px; 
+    margin:0 5px;
+}
+
+.logos_a {
+  display: inline-block;
+  margin-right: 10px; 
+}
+
+.footer a {
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+  color: #fff8da;
+}

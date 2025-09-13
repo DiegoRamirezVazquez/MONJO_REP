@@ -1,0 +1,326 @@
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*--------------------------------------------- Barra de navegación ----------------------------------------------- */
+.barra-navegacion {
+  display: flex;
+  justify-content: space-between; 
+  background-color: #000000;
+  align-items: center;
+  padding: 0px 40px;
+  color: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+
+.iconos {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 25px;
+  margin-left: 485px
+}
+
+.icono {
+  width: 35px;
+  height: 35px;
+  filter: invert(1); 
+  transition: transform 0.5s ease;
+}
+
+
+.icono:hover {
+  transform: scale(1.05);
+}
+
+/*----------------------------------------------------- BANNER -------------------------------------------------*/
+.banner {
+  display: flex;
+  align-items: center;
+}
+.banner-text {
+  margin-left: 10%;
+}
+.banner-text h2 {
+  font-size: 250%;
+  width: 200%;
+}
+.banner-text button {
+  font-family: 'Times New Roman', Times, serif;
+  background-color: black;
+  color: white;
+  font-size: 1rem;       
+  padding: 10px 20px;    
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;    
+  display: inline-block;  
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.banner-text button:hover {
+  background-color: #333; 
+}
+.banner-imgs {
+  margin-left: 25%;
+}
+.banner-imgs img {
+  width: 32%;
+  height: 45%;
+  margin-top: 1%;
+  border: 0.3vw groove black;
+}
+hr {
+  border: 0.1vw solid black;
+  margin-top: 3%;
+}
+.titulo-seccion {
+  display: flex;
+  align-items: center;
+  margin: 2% 0;
+}
+.titulo-seccion h2 {
+  text-align: center;
+  font-size: 250%;
+  margin: 0 3%;
+}
+.titulo-seccion hr {
+  flex: 1;
+}
+
+/* --------------------------------------------------- PRODUCTOS --------------------------------------------------*/
+.productos {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 5%;
+  margin-bottom: 5%;
+}
+.productos img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 0.3vw groove black;
+}
+ 
+figcaption {
+  text-align: center;         
+  font-size: 14px;           
+  font-weight: 500;          
+  color: #333;                
+  line-height: 1.4;           
+  margin-top: 10px;           
+  padding: 5px 10px;          
+  background-color: #f8f8f8;  
+  border-radius: 8px;         
+}
+
+/* ----------------------------------------------- TABLA Y FORMULARIO --------------------------------------------*/
+
+.tabla h2 {
+  font-size: 24px;
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+.tabla {
+  width: 100%;
+  text-align: center; 
+  justify-content: center; 
+  gap: 100px;               
+  flex-wrap: wrap;        
+  margin: 20px 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  align-items: stretch;
+
+}
+
+.tabla .tabla-contenido {
+  display: inline-block; 
+  vertical-align: top;
+  width: 35%;   
+  margin: 0 2%;  
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 10px;
+}
+
+.tabla tr:hover { 
+    background-color: #ccc; 
+}
+
+.tabla table {
+  width: 100%;
+  border-collapse: collapse;
+  border: none; 
+}
+
+.tabla th{
+  background-color: #ccc; 
+  color: #000000;
+  padding: 10px 5px;
+  text-align: center;
+  border-bottom: 2px solid #fff; 
+  border-left: none;
+  border-right: none;
+} 
+
+.tabla td {
+  padding: 5px 3px;
+  text-align: center;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #ddd;
+}
+
+.formulario {
+  background-color: #fff;
+  padding: 15px;
+  border: 1px solid #8f7f7f33;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;  
+  justify-content: center;  
+  height: 100%;            
+}
+
+.formulario label {
+  display: block;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: large;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.formulario input{
+   width: 83%;   
+  padding: 6px;
+  margin-bottom: 8px; 
+  box-sizing: border-box;
+}
+
+.formulario select {
+  width: 83%;  
+  padding: 6px;
+  margin-bottom: 8px; 
+  box-sizing: border-box;
+}
+
+.formulario .check {
+  display: flex;        
+  padding: 0%;   
+  align-items: self-start;    
+  margin-bottom: 0px;      
+  font-size: medium;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.opciones {
+  display: flex;
+  flex-direction: column;  
+  align-items: flex-start; 
+  gap: 6px;                
+}
+
+.opciones label {
+  display: flex;
+  align-items: center;   
+  gap: 8px;              
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: medium;
+  white-space: nowrap;   
+}
+
+.formulario button {
+  width: 83%;
+  padding: 8px;
+  background-color: #ccc;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+
+
+/* ------------------------------------------------- BENEFICIOS -------------------------------------------------*/
+.beneficios {
+  display: flex;
+  justify-content: space-around; 
+  align-items: stretch;     
+  text-align: center;
+  margin: 20px 0;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.beneficios div{
+  flex: 1;
+  min-width: 200px;          
+  max-width: 220px;          
+  padding: 15px;
+  background-color: #2C2C2C;  
+  color: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  transition: transform 0.1s ease, background-color 0.5s ease;
+  display: flex;             
+  flex-direction: column;
+  justify-content: center;
+}
+
+.beneficios div:hover {
+  transform: translateY(-5px);
+}
+
+.beneficios i {
+  font-size: 340%;
+}
+
+.titulos_bene{
+    align-content: center;
+    padding: 0% 4%;
+}
+
+/* --------------------------------------------------- FOOTER ---------------------------------------------------*/
+.footer {
+  background: black;
+  color: white;
+  padding: 3%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer h4 {
+  color: #ffffff;         
+  margin-bottom: 8px;
+}
+
+.div_con{
+    text-align: center;
+}
+.logos{
+    width:30px; 
+    margin:0 5px;
+}
+
+.logos_a {
+  display: inline-block;
+  margin-right: 10px; 
+}
+
+.footer a {
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+  color: #fff8da;
+}

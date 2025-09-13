@@ -1,0 +1,180 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*--------------------------------------------- Barra de navegación ----------------------------------------------- */
+.barra-navegacion {
+  display: flex;
+  justify-content: space-between; 
+  background-color: #000000;
+  align-items: center;
+  padding: 0px 40px;
+  color: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+
+.iconos {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 25px;
+  margin-left: 485px
+}
+
+.icono {
+  width: 35px;
+  height: 35px;
+  filter: invert(1); 
+  transition: transform 0.5s ease;
+}
+
+
+.icono:hover {
+  transform: scale(1.05);
+}
+
+
+
+/*---------------------------------------------------------------------------*/
+
+.titulos{
+  text-align: center;
+  font-size: xx-large;
+  font-family: 'Times New Roman', Times, serif;
+  color: #000000;
+}
+
+.tabla-collares {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  width: 85%;
+  max-width: 1200px;
+  margin: 0 auto;     
+  text-align: center; 
+  justify-content: center;
+}
+
+.img_collares {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.tabla-collares figcaption {
+  text-align: center;
+  color: #fff;        
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.tabla-collares figure {
+  position: relative; 
+  background-color: #000;
+  border-radius: 10px;
+  padding: 10px;
+  display: inline-block;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: transform 0.2s ease;
+}
+
+.tabla-collares figure:hover {
+  transform: scale(1.03);
+}
+
+/* Botón de + (abajo a la derecha) */
+.overlay-icon {
+  position: absolute;
+  bottom: 75px;   
+  right: 15px;     
+  width: 45px;    
+  height: 45px;
+  font-size: 24px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer; 
+  background-color: #f19d1f;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.overlay-icon:hover {
+  transform: scale(1.15);
+  background: #d4af37;
+}
+
+/* Botón corazón (arriba a la izquierda) */
+.overlay-corazon {
+  position: absolute;
+  top: 15px;          
+  left: 15px;             
+  width: 45px;
+  height: 45px;
+  border: none;          
+  background: rgba(255, 255, 255, 0.9); 
+  border-radius: 50%;    
+  cursor: pointer;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2); 
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.overlay-corazon img {
+  width: 60%;   
+  height: auto;
+}
+
+.overlay-corazon:hover {
+  transform: scale(1.15);  
+  background: #d4af37;    
+}
+
+section, table, hr, h2 {
+  scroll-margin-top: 80px; 
+}
+
+/* --------------------------------------------------- FOOTER ---------------------------------------------------*/
+.footer {
+  background: black;
+  color: white;
+  padding: 3%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer h4 {
+  color: #ffffff;         
+  margin-bottom: 8px;
+}
+
+.div_con{
+    text-align: center;
+}
+.logos{
+    width:30px; 
+    margin:0 5px;
+}
+
+.logos_a {
+  display: inline-block;
+  margin-right: 10px; 
+}
+
+.footer a {
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+  color: #fff8da;
+}
